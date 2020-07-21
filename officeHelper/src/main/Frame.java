@@ -7,11 +7,10 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 
 public class Frame {
-
+	public JFrame frame = new JFrame("Office helper");;
+	public static Help jhelp = new Help();
+	public boolean helpcheck = true;
 	public void run() {
-		
-		
-		JFrame frame = new JFrame("Office helper");
 		
 		GridLayout layout = new GridLayout(3,2);
 		
@@ -26,8 +25,6 @@ public class Frame {
 		JButton spammer = new JButton("Spammer");
 		JButton help = new JButton("Help");
 		
-		
-
 		frame.add(autoClicker);
 		frame.add(exchange);
 		frame.add(lockMouse);
@@ -42,37 +39,43 @@ public class Frame {
 
 		autoClicker.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-
+				
 			}
 		});
 		
 		exchange.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-
+				
 			}
 		});
 		
 		lockMouse.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-
+				
 			}
 		});
 		randomFile.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-
+				
 			}
 		});
 		
 		spammer.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-
+				
 			}
 		});
 		help.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-
+				if(helpcheck == true) {
+					jhelp.run();
+					helpcheck = false;
+				}
 			}
 		});
-
+		
+	}
+	public void helpchek() {
+		helpcheck = true;
 	}
 }
