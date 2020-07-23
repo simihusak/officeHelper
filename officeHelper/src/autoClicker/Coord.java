@@ -1,9 +1,12 @@
 package autoClicker;
 
+import java.util.ArrayList;
+
 public class Coord {
-
-	public Coord() {
-		// TODO Auto-generated constructor stub
+	public int x;
+	public int y;
+	public Coord(int x, int y) {
+		this.x = x;
+		this.y = y;
 	}
-
 }

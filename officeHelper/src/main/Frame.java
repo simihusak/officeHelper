@@ -5,6 +5,11 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import autoClicker.AutoClicker;
+import exchange.Exchange;
+import mouseLock.MouseLock;
+import randomFile.RandomFile;
+import spammer.Spammer;
 
 public class Frame {
 	public JFrame frame = new JFrame("Office helper");;
@@ -39,30 +44,30 @@ public class Frame {
 
 		autoClicker.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
+				new AutoClicker();
 			}
 		});
 		
 		exchange.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
+				new Exchange();
 			}
 		});
 		
 		lockMouse.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
+				new MouseLock();
 			}
 		});
 		randomFile.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
+				new RandomFile();
 			}
 		});
 		
 		spammer.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
+				new Spammer();
 			}
 		});
 		help.addActionListener(new ActionListener() {
@@ -78,4 +83,6 @@ public class Frame {
 	public void helpchek() {
 		helpcheck = true;
 	}
+	
+
 }

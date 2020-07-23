@@ -12,7 +12,7 @@ public class Help {
 	public void run() {
 		JFrame help = new JFrame("Help");
 		
-		JLabel text = new JLabel("ahojky", SwingConstants.CENTER);
+		JLabel text = new JLabel("Hey :)", SwingConstants.CENTER);
 		
 		help.add(text);
 		
